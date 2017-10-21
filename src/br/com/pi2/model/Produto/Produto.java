@@ -1,9 +1,6 @@
 package br.com.pi2.model.Produto;
 
-/**
- *
- * @author vitoria.csilva15
- */
+
 public class Produto {
 
     private String descricao;
