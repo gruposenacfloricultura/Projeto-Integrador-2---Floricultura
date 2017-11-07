@@ -1,5 +1,7 @@
+package br.com.pi2.model.jopos;
 
-package br.com.pi2.model.cliente;
+
+
 /*Importação do Date, para usar o mesmo*/
 import java.util.Date;
 

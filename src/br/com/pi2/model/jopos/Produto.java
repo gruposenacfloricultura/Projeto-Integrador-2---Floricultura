@@ -1,4 +1,4 @@
-package br.com.pi2.model.Produto;
+package br.com.pi2.model.jopos;
 
 
 public class Produto {

@@ -1,7 +1,4 @@
-
-package br.com.pi2.model.venda;
-
-import br.com.pi2.model.Produto.Produto;
+package br.com.pi2.model.jopos;
 
 
 
