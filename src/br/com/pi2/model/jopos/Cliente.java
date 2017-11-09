@@ -17,6 +17,8 @@ public class Cliente {
     private String estdoCivil;
     private String telefone;
     private String endereco;
+    private String enderecoNum;
+    private String enderecoUF;
 
     public String getNome() {
         return nome;
@@ -88,6 +90,22 @@ public class Cliente {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public String getEnderecoNum() {
+        return enderecoNum;
+    }
+
+    public void setEnderecoNum(String enderecoNum) {
+        this.enderecoNum = enderecoNum;
+    }
+
+    public String getEnderecoUF() {
+        return enderecoUF;
+    }
+
+    public void setEnderecoUF(String enderecoUF) {
+        this.enderecoUF = enderecoUF;
     }
     
     

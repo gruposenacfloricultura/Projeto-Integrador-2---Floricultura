@@ -55,6 +55,11 @@ public class TelaVendasUI extends javax.swing.JInternalFrame {
 
         botaoBuscarProduto.setText("Pesquisar produto");
         botaoBuscarProduto.setToolTipText("Busca determinado produto e seu código");
+        botaoBuscarProduto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoBuscarProdutoActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Quantidade:");
         jLabel1.setToolTipText("");
@@ -91,6 +96,11 @@ public class TelaVendasUI extends javax.swing.JInternalFrame {
 
         botatoAddCliente.setText("Adicionar cliente");
         botatoAddCliente.setToolTipText("Adiciona o cliente a venda");
+        botatoAddCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botatoAddClienteActionPerformed(evt);
+            }
+        });
 
         botaoBuscarCliente.setText("Pesquisar cliente");
         botaoBuscarCliente.setToolTipText("Permite pesquisar um cliente por nome ou outros.");
@@ -189,6 +199,14 @@ public class TelaVendasUI extends javax.swing.JInternalFrame {
     private void fieldCPFClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldCPFClienteActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_fieldCPFClienteActionPerformed
+
+    private void botaoBuscarProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoBuscarProdutoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botaoBuscarProdutoActionPerformed
+
+    private void botatoAddClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botatoAddClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botatoAddClienteActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
