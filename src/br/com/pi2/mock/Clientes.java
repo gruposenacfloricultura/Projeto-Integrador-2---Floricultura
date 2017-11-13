@@ -7,10 +7,7 @@ import br.com.pi2.model.jopos.Cliente;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author matheus.jmaia
- */
+
 public class Clientes {
     private static int totalClientes = 0;
     
