@@ -32,7 +32,7 @@ public class PesquisarProduto extends javax.swing.JInternalFrame {
         botaoBuscar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        botaoSele = new javax.swing.JButton();
+        botaoFechar = new javax.swing.JButton();
         botaoAlterar = new javax.swing.JButton();
         botaoExcluir = new javax.swing.JButton();
 
@@ -66,7 +66,7 @@ public class PesquisarProduto extends javax.swing.JInternalFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        botaoSele.setText("Selecionar");
+        botaoFechar.setText("Fechar");
 
         botaoAlterar.setText("Alterar");
         botaoAlterar.setToolTipText("Edita o produto selecionado");
@@ -102,7 +102,7 @@ public class PesquisarProduto extends javax.swing.JInternalFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(botaoExcluir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(botaoSele)
+                        .addComponent(botaoFechar)
                         .addGap(20, 20, 20))))
         );
         layout.setVerticalGroup(
@@ -117,7 +117,7 @@ public class PesquisarProduto extends javax.swing.JInternalFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botaoSele)
+                    .addComponent(botaoFechar)
                     .addComponent(botaoAlterar)
                     .addComponent(botaoExcluir))
                 .addContainerGap())
@@ -143,7 +143,7 @@ public class PesquisarProduto extends javax.swing.JInternalFrame {
     private javax.swing.JButton botaoAlterar;
     private javax.swing.JButton botaoBuscar;
     private javax.swing.JButton botaoExcluir;
-    private javax.swing.JButton botaoSele;
+    private javax.swing.JButton botaoFechar;
     private javax.swing.JTextField fieldBusca;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;

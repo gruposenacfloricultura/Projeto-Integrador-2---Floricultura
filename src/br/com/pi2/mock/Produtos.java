@@ -23,7 +23,7 @@ public class Produtos {
     
     public static List<Produto> buscar (String desc) throws Exception {
         List<Produto> listaResultado = new ArrayList<Produto>();
-        if ( desc != null || catalogoProdutos.isEmpty() ){
+        if ( desc != null || !catalogoProdutos.isEmpty() ){
               for(Produto produto : catalogoProdutos){
               if(produto.getDescricao().toUpperCase().contains(desc.toUpperCase())){
                   listaResultado.add(produto);
@@ -44,16 +44,34 @@ public class Produtos {
             
         }
         
- 
+ public static Produto obtem (int cod) throws Exception{
+        if (!catalogoProdutos.isEmpty() ){
+            for(Produto produto: catalogoProdutos){
+                if(produto.getCodigoProduto() == cod){
+                    return produto;
+                }
+            }
+        }
+        return null;
+    }        
     
-    public static void editar (int cod) throws Exception {
-        for(Produto produto : catalogoProdutos){
-            if(produto.getCodigoProduto() == cod){
-                
+    
+    public static void editar (Produto produto) throws Exception {
+       if (!catalogoProdutos.isEmpty() ){
+        for(Produto produtoedit : catalogoProdutos){
+            if(produto.getCodigoProduto() == produtoedit.getCodigoProduto()){
+                produtoedit.setCor(produto.getCor());
+                produtoedit.setDescricao(produto.getDescricao());
+                produtoedit.setEstoque(produto.getEstoque());
+                produtoedit.setTipo(produto.getTipo());
+                produtoedit.setValor(produto.getValor());
+                break;
             }
         }
     }
-            
+    }
+    
+    
     public static List<Produto> listar () throws Exception {
         return catalogoProdutos;
     }

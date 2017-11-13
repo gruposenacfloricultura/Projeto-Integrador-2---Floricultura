@@ -9,12 +9,12 @@ package br.com.pi2.views.ui.cliente;
  *
  * @author matheus.jmaia
  */
-public class CadastroCliente extends javax.swing.JInternalFrame {
+public class EditarCliente extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form CadastroCliente
      */
-    public CadastroCliente() {
+    public EditarCliente() {
         initComponents();
     }
 
@@ -50,7 +50,7 @@ public class CadastroCliente extends javax.swing.JInternalFrame {
         botaoSalvar = new javax.swing.JButton();
         botaoCancelar = new javax.swing.JButton();
 
-        setTitle("Novo Cliente");
+        setTitle("Editar Cliente");
 
         jLabel1.setText("Nome*:");
 
