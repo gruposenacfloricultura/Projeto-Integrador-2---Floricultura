@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.pi2.views.ui;
+package br.com.pi2.views.ui.produto;
 
 /**
  *
  * @author matheus.jmaia
  */
-public class PesquisarCliente extends javax.swing.JInternalFrame {
+public class PesquisarProduto extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form PesquisarCliente
      */
-    public PesquisarCliente() {
+    public PesquisarProduto() {
         initComponents();
     }
 
@@ -33,8 +33,10 @@ public class PesquisarCliente extends javax.swing.JInternalFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         botaoSele = new javax.swing.JButton();
+        botaoAlterar = new javax.swing.JButton();
+        botaoExcluir = new javax.swing.JButton();
 
-        setTitle("Pesquisar Cliente");
+        setTitle("Buscar Produto");
 
         jLabel1.setText("Digite o nome:");
 
@@ -53,18 +55,29 @@ public class PesquisarCliente extends javax.swing.JInternalFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "CPF", "Nome", "DataNasc."
+                "Código", "Desc.", "Valor UN", "Qtd. estoque"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
 
         botaoSele.setText("Selecionar");
+
+        botaoAlterar.setText("Alterar");
+        botaoAlterar.setToolTipText("Edita o produto selecionado");
+        botaoAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoAlterarActionPerformed(evt);
+            }
+        });
+
+        botaoExcluir.setText("Excluir");
+        botaoExcluir.setToolTipText("Exclui o produto selecionado");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -80,11 +93,15 @@ public class PesquisarCliente extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(21, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 462, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(44, 44, 44))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(botaoAlterar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botaoExcluir)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(botaoSele)
                         .addGap(20, 20, 20))))
         );
@@ -99,7 +116,10 @@ public class PesquisarCliente extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
-                .addComponent(botaoSele)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(botaoSele)
+                    .addComponent(botaoAlterar)
+                    .addComponent(botaoExcluir))
                 .addContainerGap())
         );
 
@@ -114,9 +134,15 @@ public class PesquisarCliente extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_fieldBuscaActionPerformed
 
+    private void botaoAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAlterarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botaoAlterarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botaoAlterar;
     private javax.swing.JButton botaoBuscar;
+    private javax.swing.JButton botaoExcluir;
     private javax.swing.JButton botaoSele;
     private javax.swing.JTextField fieldBusca;
     private javax.swing.JLabel jLabel1;

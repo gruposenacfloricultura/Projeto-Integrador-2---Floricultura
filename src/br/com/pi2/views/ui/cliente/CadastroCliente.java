@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.pi2.views.ui;
+package br.com.pi2.views.ui.cliente;
 
 /**
  *
@@ -49,8 +49,6 @@ public class CadastroCliente extends javax.swing.JInternalFrame {
         jLabel12 = new javax.swing.JLabel();
         botaoSalvar = new javax.swing.JButton();
         botaoCancelar = new javax.swing.JButton();
-
-        setTitle("Novo cliente");
 
         jLabel1.setText("Nome*:");
 

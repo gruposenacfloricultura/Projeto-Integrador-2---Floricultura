@@ -4,10 +4,10 @@ package br.com.pi2.model.jopos;
 public class Produto {
 
     private String descricao;
-    private Integer codigoProduto;
+    private int codigoProduto;
     private String tipo;
     private String cor;
-    private Integer estoque;
+    private int estoque;
     private double valor;
 
     public String getDescricao() {
@@ -18,11 +18,11 @@ public class Produto {
         this.descricao = descricao;
     }
 
-    public Integer getCodigoProduto() {
+    public int getCodigoProduto() {
         return codigoProduto;
     }
 
-    public void setCodigoProduto(Integer codigoProduto) {
+    public void setCodigoProduto(int codigoProduto) {
         this.codigoProduto = codigoProduto;
     }
 
@@ -42,11 +42,11 @@ public class Produto {
         this.cor = cor;
     }
 
-    public Integer getEstoque() {
+    public int getEstoque() {
         return estoque;
     }
 
-    public void setEstoque(Integer estoque) {
+    public void setEstoque(int estoque) {
         this.estoque = estoque;
     }
 

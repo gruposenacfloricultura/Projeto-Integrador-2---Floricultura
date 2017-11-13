@@ -9,6 +9,7 @@ import java.util.Date;
 public class Cliente {
     
     private String nome;
+    private int id;
     private String sobrenome;
     private Integer cpf;
     private Date dataNascimento;
@@ -106,6 +107,14 @@ public class Cliente {
 
     public void setEnderecoUF(String enderecoUF) {
         this.enderecoUF = enderecoUF;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
     
     
