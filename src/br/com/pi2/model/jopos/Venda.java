@@ -9,17 +9,17 @@ import java.util.List;
 
 
 public class Venda {
-    private Integer codVenda;
+    private int codVenda;
     private Date data;
     private Cliente cliente;
     private List<ItemVenda> ItemVenda;
     private double valor;
 
-    public Integer getCodVenda() {
+    public int getCodVenda() {
         return codVenda;
     }
 
-    public void setCodVenda(Integer codVenda) {
+    public void setCodVenda(int codVenda) {
         this.codVenda = codVenda;
     }
 
