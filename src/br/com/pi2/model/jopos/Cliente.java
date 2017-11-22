@@ -1,17 +1,14 @@
 package br.com.pi2.model.jopos;
 
-
-
 /*Importação do Date, para usar o mesmo*/
 import java.util.Date;
 
-
 public class Cliente {
-    
+
     private String nome;
     private int id;
     private String sobrenome;
-    private Integer cpf;
+    private String cpf;
     private Date dataNascimento;
     private String sexo;
     private String email;
@@ -37,11 +34,11 @@ public class Cliente {
         this.sobrenome = sobrenome;
     }
 
-    public Integer getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(Integer cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
@@ -116,6 +113,5 @@ public class Cliente {
     public void setId(int id) {
         this.id = id;
     }
-    
-    
+
 }

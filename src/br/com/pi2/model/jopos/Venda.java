@@ -1,19 +1,21 @@
 package br.com.pi2.model.jopos;
 
-
-
-
-
 import java.util.Date;
 import java.util.List;
 
-
 public class Venda {
+
     private int codVenda;
     private Date data;
     private Cliente cliente;
     private List<ItemVenda> ItemVenda;
     private double valor;
+
+    public void calcularTotal() {
+        for (ItemVenda itemVenda : ItemVenda) {
+            valor = itemVenda.getPreco() + valor;
+        }
+    }
 
     public int getCodVenda() {
         return codVenda;
@@ -55,7 +57,4 @@ public class Venda {
         this.valor = valor;
     }
 
-    
-   
-    
 }

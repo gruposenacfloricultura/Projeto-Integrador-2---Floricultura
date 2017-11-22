@@ -1,13 +1,12 @@
 package br.com.pi2.model.jopos;
 
-
-
 public class ItemVenda {
+
     private Produto itemProduto;
     private double qtde;
     private double preco;
- 
-    public void calcularPreco(){
+
+    public void calcularPreco() {
         preco = (itemProduto.getValor() * qtde);
     }
 
@@ -34,6 +33,5 @@ public class ItemVenda {
     public void setPreco(double preco) {
         this.preco = preco;
     }
-  
-    
+
 }

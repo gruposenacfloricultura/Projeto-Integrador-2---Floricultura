@@ -1,6 +1,5 @@
 package br.com.pi2.model.jopos;
 
-
 public class Produto {
 
     private String descricao;
